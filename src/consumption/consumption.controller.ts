@@ -33,4 +33,5 @@ export class ConsumptionController {
   async checkConsumptionAlert(@Query('userId') userId: string): Promise<string> {
     return this.consumptionService.checkConsumptionAlert(userId);
   }
+
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Consumo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Histórico de Consumo de Água</h1>
+    <form id="form-historico">
+        <label for="userId">Código do Usuário:</label>
+        <input type="text" id="userId" required><br>
+
+        <label for="startDate">Data Inicial:</label>
+        <input type="date" id="startDate" required><br>
+
+        <label for="endDate">Data Final:</label>
+        <input type="date" id="endDate" required><br>
+
+        <button type="submit">Consultar Histórico</button>
+    </form>
+
+    <h2>Histórico</h2>
+    <table id="historico-table">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Consumo (m³)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
